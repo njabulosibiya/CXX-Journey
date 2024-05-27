@@ -5,7 +5,7 @@
 * Project: cpp practice
 *
 * File Summary:
-*   In this file is where all the functions of the program are.
+*   Includes functions not related to any website or project, just regular code I came up with.
 */
 
 #ifndef FUNCTIONS_H

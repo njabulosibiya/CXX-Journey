@@ -1,16 +1,16 @@
 /*
-*
-*
-*
-*
-*
+* Project: CXX Project
+* 
+* Summary:
+* All functions and classes are called and presented to user through this interface.
+* 
 */
 
 #ifndef FUNCTIONLIST_H
 #define FUNCTIONLIST_H
 
 #include <iostream>
-#include "functions.h"
+#include "miscellaneous.h"
 
 //lists all funtions available to be selected by the user.
 void listOfFunctions() {

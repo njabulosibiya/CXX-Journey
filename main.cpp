@@ -4,12 +4,15 @@
 * Project: Cpp practice
 *
 * File Summary: 
-*   This is a project where I practice my C++ skills.
+*   This is where I practice and grow my C++ & CMake skills. A safe space where I can experiment 
+*   & do whatever. It isn't a program or application, but a collection of functions, namespaces & 
+*   classes of solutions to problems & excises from sites i.e. Leetcode, Codewars, HackerRank & 
+*   the like.
+* 
 */
 
 #include <iostream>
-#include "functions.h"
-#include "functionList.h"
+#include "interface.h"
 
 int main() {
     listOfFunctions();
