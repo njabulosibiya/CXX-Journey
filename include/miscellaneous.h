@@ -15,6 +15,15 @@
 #include <ctime>
 #include <cstdlib>
 
+// Collection of miscellaneous functions using pointers & reference variables.
+namespace point_ref {
+    // Basic reference variable usage
+    template <typename Type>
+    Type basicRef(Type& ogVariable, Type& refVariable) {
+        return ogVariable + refVariable;
+    }
+}
+
 //1
 //prints number entered by user
 void userInput() {
@@ -25,7 +34,7 @@ void userInput() {
 }
 //prints number entered by user.
 int userInput(int userNumber) {
-    return userNumber;
+    return userNumber + 1;
 }
 
 //2

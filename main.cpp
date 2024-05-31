@@ -13,9 +13,11 @@
 
 #include <iostream>
 #include "interface.h"
+#include "data-structures/basic_classes.h"
 
 int main() {
-    listOfFunctions();
+    using basicc::Student;
+    Student student("class");
     
     return 0;
 }
