@@ -2,6 +2,6 @@
 
 basicc::Student::Student(std::string className): m_major(className){}
 
-std::string basicc::Student::className() {
+std::string basicc::Student::className() const {
 	return m_major;
 }

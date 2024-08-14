@@ -18,6 +18,8 @@
 int main() {
     using basicc::Student;
     Student student("class");
+
+    std::cout << student.className() << std::endl;
     
     return 0;
 }
