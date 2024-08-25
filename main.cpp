@@ -17,17 +17,14 @@
 #include "codezclub.h"
 
 int main() {
-    using basicc::Student;
-    Student student("class");
 
-    std::cout << student.className() << std::endl;
+    bool tryAgain(false);
+    do {
+        cclub::divisionWithRemainder();
 
-    std::cout << "ENTER 2 VALUES(SPACE SEPERATED): "; 
-    
-    signed long value1(0), value2(0);
-    std::cin >> value1 >> value2;
-
-    std::cout << "RESULTS: " << cclub::product(value1, value2) << std::endl;
+        std::cout << "Try Again? ";
+        std::cin >> tryAgain;
+    } while (tryAgain == true);
 
     return 0;
 }
