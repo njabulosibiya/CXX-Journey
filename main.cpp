@@ -20,7 +20,7 @@ int main() {
 
     bool tryAgain(false);
     do {
-        cclub::divisionWithRemainder();
+        cclub::swapNumbers();
 
         std::cout << "Try Again? ";
         std::cin >> tryAgain;

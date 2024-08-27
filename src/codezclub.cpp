@@ -37,3 +37,22 @@ void cclub::divisionWithRemainder() {
 		std::cout << numerator << "/" << denominator << " = " << quotient << "." << (numerator % denominator) << std::endl;
 	}
 }
+
+void cclub::swapNumbers() {
+	std::cout << "Enter 2 numbers: ";
+
+	long number1(0), number2(0);
+	std::cin >> number1 >> number2;
+
+	// Before swap
+	std::cout << "Number 1: " << number1 << "\nNumber 2: " << number2 << std::endl;
+	
+	number1 = (number1 + number2);
+	number2 = (number1 - number2);
+	number1 = (number1 - number2);
+
+	// After swap
+	std::cout << "\nNumber 1: " << number1 << "\nNumber 2: " << number2 << std::endl;
+
+
+}

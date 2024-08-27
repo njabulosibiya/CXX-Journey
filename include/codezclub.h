@@ -20,4 +20,8 @@ namespace cclub {
 
 	// Prompts user to enter 2 numbers, the numerator and denominator then prints out the quotient of the results
 	void divisionWithRemainder();
+
+	// Prompts user to enter 2 numbers then prints those numbers swapped! 
+	// The printed numbers are swapped, not the variables
+	void swapNumbers();
 }
