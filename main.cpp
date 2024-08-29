@@ -20,9 +20,9 @@ int main() {
 
     bool tryAgain(false);
     do {
-        cclub::swapNumbers();
+        cclub::printASCII();
 
-        std::cout << "Try Again? ";
+        std::cout << "\nTry Again? ";
         std::cin >> tryAgain;
     } while (tryAgain == true);
 

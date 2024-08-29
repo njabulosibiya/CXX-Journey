@@ -56,3 +56,21 @@ void cclub::swapNumbers() {
 
 
 }
+
+void cclub::findSizeOf() {
+	std::cout << "The size of integer: " << sizeof(int) << std::endl;
+	std::cout << "The size of integer: " << sizeof(char) << std::endl;
+	std::cout << "The size of integer: " << sizeof(float) << std::endl;
+	std::cout << "The size of integer: " << sizeof(double) << std::endl;
+}
+
+int cclub::printASCII() {
+
+	std::cout << "Enter any letter, number or symbol (only 1): ";
+	char letter(0);
+	std::cin >> letter;
+
+	int let(letter);
+
+	return let;
+}

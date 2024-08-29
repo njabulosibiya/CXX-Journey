@@ -24,4 +24,11 @@ namespace cclub {
 	// Prompts user to enter 2 numbers then prints those numbers swapped! 
 	// The printed numbers are swapped, not the variables
 	void swapNumbers();
+
+	// Finds the size of the following data types and prints them to console:
+	// int, float, double & char
+	void findSizeOf();
+
+	// Find the ASCII value of any character entered by user
+	int printASCII();
 }
