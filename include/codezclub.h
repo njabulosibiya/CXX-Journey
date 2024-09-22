@@ -29,6 +29,9 @@ namespace cclub {
 	// int, float, double & char
 	void findSizeOf();
 
-	// Find the ASCII value of any character entered by user
+	// Returns the ASCII value of any character entered by user (Limited to unicode only)
 	int printASCII();
+
+	// Generates a random number between 0 & 100
+	int randomNumber();
 }
