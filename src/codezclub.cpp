@@ -1,5 +1,12 @@
-#include <iostream>
 #include "codezclub.h"
+
+#include <iostream>
+
+// For randomNumber() method
+#include <cstdlib>
+#include <ctime>
+
+
 
 signed long cclub::product(signed long value_1, signed long value_2) {
 	return (value_1 * value_2);
@@ -73,4 +80,15 @@ int cclub::printASCII() {
 	int let(letter);
 
 	return let;
+}
+
+int cclub::randomNumber() {
+	// This is commented out because when method is called within a loop
+	// it will generate the same number for the number of times it loops
+	// This brings another question, why do we have to seed when we can get numbers without 
+	// doing so?
+	//std::srand(std::time(0)); // Seed random number generator with current time
+
+	return std::rand()%100; // Get random number between 0 & 100
+	// This brings the question, what is a seed in programming?
 }

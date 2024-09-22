@@ -20,7 +20,11 @@ int main() {
 
     bool tryAgain(false);
     do {
-        cclub::printASCII();
+        std::cout << "Generating 10 random numbers: ";
+
+        for (unsigned short i = 0; i < 10; i++) {
+            std::cout << cclub::randomNumber() << std::endl;
+        }
 
         std::cout << "\nTry Again? ";
         std::cin >> tryAgain;
