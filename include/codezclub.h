@@ -34,4 +34,7 @@ namespace cclub {
 
 	// Generates a random number between 0 & 100
 	int randomNumber();
+
+	// Prompts user to enter 3 numbers & prints their sum & average
+	void sumAndAverage();
 }

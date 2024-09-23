@@ -20,11 +20,9 @@ int main() {
 
     bool tryAgain(false);
     do {
-        std::cout << "Generating 10 random numbers: ";
+        std::cout << "Return sum & average of 3 numbers";
 
-        for (unsigned short i = 0; i < 10; i++) {
-            std::cout << cclub::randomNumber() << std::endl;
-        }
+        cclub::sumAndAverage();
 
         std::cout << "\nTry Again? ";
         std::cin >> tryAgain;

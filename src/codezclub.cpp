@@ -92,3 +92,13 @@ int cclub::randomNumber() {
 	return std::rand()%100; // Get random number between 0 & 100
 	// This brings the question, what is a seed in programming?
 }
+
+void cclub::sumAndAverage() {
+	std::cout << "Enter 3 numbers: ";
+	float a(0), b(0), c(0);
+	std::cin >> a >> b >> c;
+	float sum(a + b + c);
+
+	std::cout << "Sum: " << sum << std::endl;
+	std::cout << "/nAverage: " << sum / 3 << std::endl;
+}
