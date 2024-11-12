@@ -1,7 +1,11 @@
-/*
+/*  File: main.cpp
+* 
 * Author: Njabulo Sibiya (75039043+njabulosibiya@users.noreply.github.com)
 * Date: 03 Feb 2023
+* 
 * Project: Cpp practice
+* 
+* Dependencies: none
 *
 * File Summary: 
 *   This is where I practice and grow my C++ & CMake skills. A safe space where I can experiment 

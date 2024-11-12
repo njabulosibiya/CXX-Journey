@@ -102,3 +102,11 @@ void cclub::sumAndAverage() {
 	std::cout << "Sum: " << sum << std::endl;
 	std::cout << "/nAverage: " << sum / 3 << std::endl;
 }
+
+void cclub::Code::putThing(unsigned short thang) {
+	m_thing = thang;
+}
+
+unsigned short cclub::Code::getThing() const {
+	return m_thing;
+}
