@@ -1,6 +1,11 @@
-/*	File: CodezClub\
-*	Author: Njabulo Sibiya
+/*	File: CodezClubz
 *	Date: 25 August 2024
+* 
+*	Author: Njabulo Sibiya
+* 
+*	Project: C-Practice
+* 
+*	Dependencies:	none
 * 
 *	Summary:
 *	This file is for practice problems found in the website
@@ -34,4 +39,18 @@ namespace cclub {
 
 	// Generates a random number between 0 & 100
 	int randomNumber();
+
+	// Prompts user to enter 3 numbers & prints their sum & average
+	void sumAndAverage();
+
+	// Test class that surves no actual function whatsoever
+	class Code {
+	public:
+		Code();
+		void putThing(unsigned short thang);
+		unsigned short getThing() const;
+
+	private:
+		unsigned short m_thing;
+	};
 }

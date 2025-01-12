@@ -1,7 +1,11 @@
-/*
+/*  File: main.cpp
+* 
 * Author: Njabulo Sibiya (75039043+njabulosibiya@users.noreply.github.com)
 * Date: 03 Feb 2023
+* 
 * Project: Cpp practice
+* 
+* Dependencies: none
 *
 * File Summary: 
 *   This is where I practice and grow my C++ & CMake skills. A safe space where I can experiment 
@@ -15,20 +19,16 @@
 #include "interface.h"
 #include "data-structures/basic_classes.h"
 #include "codezclub.h"
+#include "pointers.h"
 
 int main() {
 
-    bool tryAgain(false);
-    do {
-        std::cout << "Generating 10 random numbers: ";
+    BasicPointers me;
 
-        for (unsigned short i = 0; i < 10; i++) {
-            std::cout << cclub::randomNumber() << std::endl;
-        }
+    int a[4] = { 34,46,256,56 };
 
-        std::cout << "\nTry Again? ";
-        std::cin >> tryAgain;
-    } while (tryAgain == true);
+    std::cout << me.getValueInArray(a, 4, 56);
+
 
     return 0;
 }
