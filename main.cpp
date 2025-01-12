@@ -19,18 +19,16 @@
 #include "interface.h"
 #include "data-structures/basic_classes.h"
 #include "codezclub.h"
+#include "pointers.h"
 
 int main() {
 
-    bool tryAgain(false);
-    do {
-        std::cout << "Return sum & average of 3 numbers";
+    BasicPointers me;
 
-        cclub::sumAndAverage();
+    int a[4] = { 34,46,256,56 };
 
-        std::cout << "\nTry Again? ";
-        std::cin >> tryAgain;
-    } while (tryAgain == true);
+    std::cout << me.getValueInArray(a, 4, 56);
+
 
     return 0;
 }
