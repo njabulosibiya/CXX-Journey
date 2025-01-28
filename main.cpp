@@ -16,19 +16,27 @@
 */
 
 #include <iostream>
+
 #include "interface.h"
 #include "data-structures/basic_classes.h"
 #include "codezclub.h"
 #include "pointers.h"
 
-int main() {
+int main(int argc, char* argv[]) {
 
     BasicPointers me;
-
+    // int side
     int a[4] = { 34,46,256,56 };
+    int* pa(a);
+    int* iPArray[] = { pa };
+    int** iPPArray[] = { iPArray };
 
-    std::cout << me.getValueInArray(a, 4, 56);
-
+    // char side
+    char name[] = "njabulo";
+    char* cSArray[] = { name, "Kwanele", "dadarkfather"};
+    
+    //me.workingWithCStrings(name, cSArray, pa, iPArray);
+    me.dynamicAllocation();
 
     return 0;
 }
