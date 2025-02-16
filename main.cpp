@@ -22,21 +22,25 @@
 #include "codezclub.h"
 #include "pointers.h"
 
+void test(int* a);
+
 int main(int argc, char* argv[]) {
 
-    BasicPointers me;
+    BasicPointers pointer;
     // int side
     int a[4] = { 34,46,256,56 };
+
+    pointer.mainParamManip(argc, argv);
+
+    return 0;
+}
+
+void test(int *a) {
     int* pa(a);
     int* iPArray[] = { pa };
     int** iPPArray[] = { iPArray };
 
     // char side
     char name[] = "njabulo";
-    char* cSArray[] = { name, "Kwanele", "dadarkfather"};
-    
-    //me.workingWithCStrings(name, cSArray, pa, iPArray);
-    me.dynamicAllocation();
-
-    return 0;
+    char* cSArray[] = { name, "Kwanele", "dadarkfather" };
 }

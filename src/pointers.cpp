@@ -30,7 +30,9 @@ void BasicPointers::basicPointerManipulation(int ip, std::string sp, const int c
 
 int BasicPointers::getValueInArray(int* array, short int size, int value, int position) const {
 	std::cout << *array << std::endl; // printing the array itself without any position, what will be printed?
-	std::cout << &array[0] << std::endl; // Gives same address as above, as this is the beginning of array..
+	// The following line of code proved that the first element of array has the same memory address as 'array itself'
+	std::cout << "Address of array itself: " << array << std::endl; // Gives same address as above, as this is the beginning of array..
+	std::cout << "Address of first element: " << & array[0] << std::endl; 
 
 	if (value != 0) {
 		if (position != 0) {
@@ -73,13 +75,14 @@ void BasicPointers::pointerArithmetics(Operation operation) {
 		// The problem here is that as much as I can specify the memory address, there is not much i can do about it as there is 
 		// no way to store data on the memory address itself without a variable;
 		{
+			// The above comment shows my nievety at first, this is perfectly valid and can be used through dereferencing the pointe
 			int* pma(&x + 1);
 		}
 		break;
 
 	case 1: // Array indexing on pointer arithmetics
 
-		{ // prints out values and addresses of array using the array itself
+		{ // prints out values and address of array elements using the array itself
 		std::cout << "USING ARRAY...\n";
 			std::cout << "Array Z Memory Addresses = { ";
 			for (int i(0); i < 6; i++) {
@@ -132,6 +135,7 @@ void BasicPointers::passingArrayAsParam(int array[], Param type, int* array2) {
 	switch (type) {
 	case 0: // Uses first param
 		std::cout << "passing as array: ";
+		// Why can I not use ranged for loop in this case?
 		for (int i = 0; i < 6; i++) {
 			std::cout << array[i] << ", ";
 		}
@@ -171,9 +175,10 @@ void BasicPointers::pointersToPointers() {
 		something = *pointer; // something = 34
 		std::cout << "something: " << something << std::endl;
 		something = **pointer2;
+		std::cout << "something Again: " << something << std::endl;
 
 		something = *(*pointer2 + 1); // something = 543
-		std::cout << something;
+		std::cout << "something final time: " << something << std::endl;
 	}
 }
 
@@ -202,12 +207,13 @@ void BasicPointers::basicCString() {
 		// Now lets add a pointer.
 		char* charPointer(name);
 		std::cout << "char pointer: " << charPointer << std::endl;
-
+		// What happpens is that it automatically detects that it is a c-string
 		//workingWithCStrings(name);
 	}
 }
 
 void BasicPointers::mainParamManip(int argc, char** argv) {
+	// The below could be due to the difference of deep & shallow copying
 	/* section does not work due to data corruption when copying *arg[0] to c-string var char*
 	char* seperated[] = { "initialize" };
 	
@@ -237,7 +243,7 @@ void BasicPointers::mainParamManip(int argc, char** argv) {
 		char temp[] = { NULL };
 		temp[0] = *argv[0]; // dereferences array & dereferences pointer in arrays first index
 
-		std::cout << "Temp: " << temp[3] << std::endl;
+		std::cout << "Temp: " << temp[0] << std::endl;
 		//char temp2[] = { NULL };
 		//temp2[0] = *argv[0]; // does not work argv[0] = *argv first index && *argv[0] = *(arg[0]) = *(*arg) -> **arg[0] = ***arg which does not exist
 	}

@@ -49,6 +49,7 @@ public:
 		Second, // Uses second method of passing parameter
 	};
 	// The 2 ways of passing an array into a function.
+	// last array is optional
 	void passingArrayAsParam(int array[], Param type, int* array2 = NULL);
 
 	// Pointers to Pointers to Pointers to...
@@ -74,10 +75,9 @@ public:
 	// Dynamic pointers / Dynamic memory allocation
 	void dynamicAllocation();
 
-	// Advanced
-	// The following methods work with pointers to pointers to pointers etc..
-	// Methods with pointer & reference return types, their uses and manipulation
-	// 
+	/**********************************************************/
+	// A look at Deep vs Shallow copying
+	void deepShallowCopyOverview();
 
 private:
 	int* m_intPointer;
